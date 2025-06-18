@@ -1,0 +1,945 @@
+/* Tablet Styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 0 40px;
+    }
+}
+
+/* Mobile Styles (320px - 768px) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Navigation Mobile Styles */
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+
+    /* Hero Section Mobile Styles */
+    .hero-section {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .hero-text {
+        font-size: 1.1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn-secondary {
+        margin-left: 0;
+    }
+
+    /* Project Grid Mobile Styles */
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Skills Grid Mobile Styles */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer Mobile Styles */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Small Mobile Styles (320px - 480px) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Contact Page Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .contact-grid {
+        gap: 2rem;
+    }
+
+    .connect-grid {
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact-hero h1 {
+        font-size: 3rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .connect-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-hero {
+        padding: 80px 0 40px;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-hero .lead {
+        font-size: 1.1rem;
+    }
+
+    .contact-content {
+        padding: 60px 0;
+    }
+
+    .contact-info,
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+
+    .info-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .info-icon img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .connect-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .connect-card {
+        padding: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.6rem 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+
+    .contact-hero .lead {
+        font-size: 1rem;
+    }
+
+    .contact-info h2,
+    .contact-form-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-content h3 {
+        font-size: 1rem;
+    }
+
+    .info-content p {
+        font-size: 0.9rem;
+    }
+
+    .cv-download {
+        text-align: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .connect-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .connect-card p {
+        font-size: 0.9rem;
+        min-height: auto;
+    }
+}
+
+/* Form Validation Styles */
+@media screen and (max-width: 768px) {
+    .form-group.error .error-message {
+        font-size: 0.8rem;
+    }
+
+    .success-message {
+        font-size: 0.9rem;
+    }
+
+    .success-message::before {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+    }
+}
+
+/* Achievements Page Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .achievements-grid,
+    .goals-grid {
+        gap: 1.5rem;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .achievements-hero h1 {
+        font-size: 3rem;
+    }
+
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px !important;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        left: 0;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 2rem auto 0;
+    }
+
+    .goals-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 2rem auto 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .achievements-hero {
+        padding: 80px 0 40px;
+    }
+
+    .achievements-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .achievements-hero .lead {
+        font-size: 1.1rem;
+    }
+
+    .timeline-content {
+        padding: 15px;
+    }
+
+    .timeline-date {
+        font-size: 0.8rem;
+        padding: 4px 12px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 2rem auto 0;
+    }
+
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    .testimonial-card blockquote {
+        font-size: 1rem;
+    }
+
+    .achievement-card,
+    .goal-card {
+        padding: 1.5rem;
+    }
+
+    .achievement-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .achievements-hero h1 {
+        font-size: 2rem;
+    }
+
+    .achievements-hero .lead {
+        font-size: 1rem;
+    }
+
+    .timeline-content {
+        width: calc(100% - 40px);
+        margin-left: 40px !important;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .achievement-details li,
+    .achievement-highlights li,
+    .goal-card ul li {
+        font-size: 0.9rem;
+    }
+
+    .testimonial-card blockquote::before {
+        font-size: 2rem;
+        top: -15px;
+    }
+
+    .testimonial-card blockquote::after {
+        font-size: 2rem;
+        bottom: -30px;
+    }
+
+    .testimonial-card cite {
+        font-size: 0.9rem;
+    }
+}
+
+/* Projects Page Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .project-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .projects-hero h1 {
+        font-size: 3rem;
+    }
+
+    .project-filters {
+        gap: 0.75rem;
+    }
+
+    .filter-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .project-search {
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects-hero {
+        padding: 80px 0 40px;
+    }
+
+    .projects-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .projects-hero .lead {
+        font-size: 1.1rem;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .project-content {
+        padding: 1.25rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
+
+    .tech-tag {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 2rem auto 0;
+    }
+
+    .category-card {
+        padding: 1.5rem;
+    }
+
+    .category-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .category-card p {
+        font-size: 0.9rem;
+        min-height: auto;
+    }
+
+    /* Modal Responsive */
+    .project-modal {
+        padding: 1rem;
+    }
+
+    .modal-content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects-hero h1 {
+        font-size: 2rem;
+    }
+
+    .projects-hero .lead {
+        font-size: 1rem;
+    }
+
+    .project-filters {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-search-container {
+        margin: 1.5rem auto;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 1.5rem auto 0;
+    }
+
+    .project-content {
+        padding: 1rem;
+    }
+
+    .modal-header {
+        padding: 1rem;
+    }
+
+    .modal-body {
+        padding: 1rem;
+    }
+
+    .modal-close {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+}
+
+/* About Page Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .profile-grid {
+        gap: 3rem;
+    }
+
+    .interests-grid,
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-hero h1 {
+        font-size: 3rem;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .profile-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .education-grid,
+    .community-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-hero {
+        padding: 80px 0 40px;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-hero .lead {
+        font-size: 1.1rem;
+    }
+
+    .profile-content {
+        padding: 1.5rem;
+    }
+
+    .profile-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .interests-grid,
+    .awards-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .interest-card,
+    .award-card {
+        padding: 1.5rem;
+    }
+
+    .interest-icon,
+    .award-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+    }
+
+    .education-card,
+    .community-card {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-hero .lead {
+        font-size: 1rem;
+    }
+
+    .profile-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .profile-content p {
+        font-size: 0.95rem;
+    }
+
+    .education-card h3,
+    .community-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .education-date,
+    .community-date,
+    .award-date {
+        font-size: 0.85rem;
+    }
+
+    .education-details,
+    .community-description,
+    .award-description {
+        font-size: 0.9rem;
+    }
+
+    .education-highlights li,
+    .community-impact li {
+        font-size: 0.9rem;
+        padding-left: 1.2rem;
+    }
+
+    .interest-card h3,
+    .award-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .interest-card p {
+        font-size: 0.9rem;
+        min-height: auto;
+    }
+}
+
+/* Skills Page Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .skills-container {
+        gap: 2rem;
+    }
+
+    .professional-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .skills-hero h1 {
+        font-size: 3rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 3rem auto 0;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .certification-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills-hero {
+        padding: 80px 0 40px;
+    }
+
+    .skills-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .skills-hero .lead {
+        font-size: 1.1rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .section-header p {
+        font-size: 1rem;
+    }
+
+    .skills-category {
+        padding: 1.5rem;
+    }
+
+    .skills-category h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .professional-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 2rem auto 0;
+    }
+
+    .professional-card {
+        padding: 1.5rem;
+    }
+
+    .tool-card {
+        padding: 1.5rem;
+    }
+
+    .tool-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+    }
+
+    .tool-icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .certification-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 2rem auto 0;
+    }
+
+    .certification-card {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills-hero h1 {
+        font-size: 2rem;
+    }
+
+    .skills-hero .lead {
+        font-size: 1rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: 2rem auto 0;
+    }
+
+    .skill-name,
+    .skill-percentage {
+        font-size: 0.9rem;
+    }
+
+    .skill-bar {
+        height: 6px;
+    }
+
+    .tool-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .tool-card p {
+        font-size: 0.9rem;
+    }
+
+    .professional-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .skill-list li {
+        font-size: 0.9rem;
+    }
+
+    .certification-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .certification-details {
+        font-size: 0.9rem;
+    }
+
+    .proficiency-label,
+    .certification-status {
+        font-size: 0.8rem;
+    }
+}
+
+/* Navigation Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .nav-container {
+        padding: 1rem;
+    }
+
+    .nav-menu {
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .nav-menu a {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .nav-container {
+        padding: 0.8rem 1rem;
+    }
+
+    .scroll-progress {
+        height: 2px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .mobile-menu a {
+        font-size: 1.3rem;
+    }
+
+    .nav-container {
+        padding: 0.7rem 1rem;
+    }
+
+    .nav-toggle {
+        width: 25px;
+        height: 18px;
+    }
+
+    .nav-toggle span {
+        height: 2px;
+    }
+}
+
+/* Mobile Menu Animation Adjustments */
+@media screen and (max-height: 600px) {
+    .mobile-menu {
+        padding: 4rem 2rem 2rem;
+    }
+
+    .mobile-menu li {
+        margin: 1rem 0;
+    }
+
+    .mobile-menu a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Back to Top Button Responsive Styles */
+@media screen and (max-width: 992px) {
+    .back-to-top {
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+    }
+
+    .back-to-top svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .back-to-top svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Handle devices with bottom navigation bars */
+@media screen and (max-height: 800px) {
+    .back-to-top {
+        bottom: 4rem;
+    }
+} 

@@ -1,0 +1,1265 @@
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Animation Classes */
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Slide Up Animation Classes with Delays */
+.slide-up {
+    opacity: 0;
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+/* Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Loading Animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--text-secondary);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Page Transition */
+.page-transition {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Skill Bar Animation */
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--skill-level);
+    }
+}
+
+.skill-bar-fill {
+    animation: fillBar 1.5s ease-out forwards;
+}
+
+/* Project Card Hover Effect */
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Hover Animation */
+.btn-hover-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-hover-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.btn-hover-effect:hover::after {
+    transform: translateX(0);
+}
+
+/* Contact Page Animations */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animations to contact page elements */
+.contact-info {
+    animation: slideInFromLeft 0.6s ease-out forwards;
+}
+
+.contact-form-container {
+    animation: slideInFromRight 0.6s ease-out forwards;
+}
+
+.info-item {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.info-item:nth-child(1) { animation-delay: 0.2s; }
+.info-item:nth-child(2) { animation-delay: 0.4s; }
+.info-item:nth-child(3) { animation-delay: 0.6s; }
+
+.connect-card {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.connect-card:nth-child(1) { animation-delay: 0.3s; }
+.connect-card:nth-child(2) { animation-delay: 0.5s; }
+.connect-card:nth-child(3) { animation-delay: 0.7s; }
+
+/* Form input focus effects */
+.form-group input:focus,
+.form-group textarea:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 245, 255, 0.1);
+}
+
+/* Button hover animations */
+.btn-primary,
+.btn-secondary {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 245, 255, 0.2);
+}
+
+/* Loading animation for form submission */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--text-white);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: rotate 0.8s linear infinite;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Success message animation */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.success-message {
+    animation: scaleIn 0.4s ease-out forwards;
+    color: #00ff9d;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.success-message::before {
+    content: '✓';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #00ff9d;
+    color: var(--background);
+    border-radius: 50%;
+}
+
+/* Achievements Page Animations */
+@keyframes timelineAppear {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes timelineLineGrow {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes cardSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes testimonialFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Apply animations to achievement elements */
+.timeline::before {
+    animation: timelineLineGrow 1.5s ease-out forwards;
+}
+
+.timeline-item {
+    opacity: 0;
+    animation: timelineAppear 0.6s ease-out forwards;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.2s; }
+.timeline-item:nth-child(2) { animation-delay: 0.4s; }
+.timeline-item:nth-child(3) { animation-delay: 0.6s; }
+
+.achievement-card {
+    opacity: 0;
+    animation: cardSlideUp 0.6s ease-out forwards;
+}
+
+.achievement-card:nth-child(1) { animation-delay: 0.3s; }
+.achievement-card:nth-child(2) { animation-delay: 0.5s; }
+
+.testimonial-card {
+    opacity: 0;
+    animation: testimonialFadeIn 0.6s ease-out forwards;
+}
+
+.testimonial-card:nth-child(1) { animation-delay: 0.2s; }
+.testimonial-card:nth-child(2) { animation-delay: 0.4s; }
+.testimonial-card:nth-child(3) { animation-delay: 0.6s; }
+
+.goal-card {
+    opacity: 0;
+    animation: cardSlideUp 0.6s ease-out forwards;
+}
+
+.goal-card:nth-child(1) { animation-delay: 0.3s; }
+.goal-card:nth-child(2) { animation-delay: 0.5s; }
+
+/* Achievement details animation */
+.achievement-details li,
+.achievement-highlights li,
+.goal-card ul li {
+    opacity: 0;
+    animation: fadeInLeft 0.5s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Stagger list item animations */
+.achievement-details li:nth-child(1),
+.achievement-highlights li:nth-child(1),
+.goal-card ul li:nth-child(1) { animation-delay: 0.2s; }
+
+.achievement-details li:nth-child(2),
+.achievement-highlights li:nth-child(2),
+.goal-card ul li:nth-child(2) { animation-delay: 0.3s; }
+
+.achievement-details li:nth-child(3),
+.achievement-highlights li:nth-child(3),
+.goal-card ul li:nth-child(3) { animation-delay: 0.4s; }
+
+/* Icon animation */
+.achievement-icon {
+    animation: iconPulse 2s infinite;
+}
+
+@keyframes iconPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Quote animation */
+.testimonial-card blockquote::before,
+.testimonial-card blockquote::after {
+    animation: quotePulse 3s infinite;
+}
+
+@keyframes quotePulse {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+
+/* Hover effects */
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+    animation: iconPulse 1s infinite;
+}
+
+.testimonial-card:hover blockquote::before,
+.testimonial-card:hover blockquote::after {
+    animation: quotePulse 1.5s infinite;
+}
+
+/* Intersection Observer Animations */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Projects Page Animations */
+@keyframes filterButtonPop {
+    0% {
+        transform: scale(0.95);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes projectCardReveal {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes searchBarExpand {
+    from {
+        width: 95%;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Apply animations to project elements */
+.filter-btn {
+    animation: filterButtonPop 0.3s ease-out;
+}
+
+.filter-btn:hover {
+    animation: filterButtonPop 0.3s ease-out;
+}
+
+.project-search-container {
+    animation: searchBarExpand 0.5s ease-out forwards;
+}
+
+.project-card {
+    opacity: 0;
+    animation: projectCardReveal 0.6s ease-out forwards;
+}
+
+/* Stagger project card animations */
+.project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-card:nth-child(2) { animation-delay: 0.2s; }
+.project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-card:nth-child(4) { animation-delay: 0.4s; }
+.project-card:nth-child(5) { animation-delay: 0.5s; }
+.project-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Category card animations */
+.category-card {
+    opacity: 0;
+    animation: projectCardReveal 0.6s ease-out forwards;
+}
+
+.category-card:nth-child(1) { animation-delay: 0.2s; }
+.category-card:nth-child(2) { animation-delay: 0.4s; }
+.category-card:nth-child(3) { animation-delay: 0.6s; }
+.category-card:nth-child(4) { animation-delay: 0.8s; }
+
+/* Project image hover effect */
+.project-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        rgba(0, 245, 255, 0.2) 0%,
+        transparent 100%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-image::after {
+    opacity: 1;
+}
+
+/* Tech tag animations */
+.tech-tag {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.tech-tag:hover {
+    transform: translateY(-2px);
+}
+
+/* Modal animations */
+.project-modal.active .modal-content {
+    animation: modalFadeIn 0.3s ease-out forwards;
+}
+
+/* Loading animation for project images */
+.project-image.loading::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--accent-color);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    transform: translate(-50%, -50%);
+}
+
+/* Filter transition */
+.project-grid {
+    transition: opacity 0.3s ease;
+}
+
+.project-grid.filtering {
+    opacity: 0.5;
+}
+
+/* Search animation */
+@keyframes searchPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 245, 255, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 245, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 245, 255, 0);
+    }
+}
+
+.project-search:focus {
+    animation: searchPulse 2s infinite;
+}
+
+/* Button hover effect */
+.btn-view {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-view::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.btn-view:hover::after {
+    transform: translateX(0);
+}
+
+/* About Page Animations */
+@keyframes profileImageReveal {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes profileContentReveal {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes cardSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animations to about page elements */
+.profile-image-container {
+    animation: profileImageReveal 0.8s ease-out forwards;
+}
+
+.profile-content {
+    opacity: 0;
+    animation: profileContentReveal 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.education-card {
+    opacity: 0;
+    animation: cardSlideUp 0.6s ease-out forwards;
+}
+
+.education-card:nth-child(1) { animation-delay: 0.2s; }
+.education-card:nth-child(2) { animation-delay: 0.4s; }
+
+.interest-card {
+    opacity: 0;
+    animation: cardSlideUp 0.6s ease-out forwards;
+}
+
+.interest-card:nth-child(1) { animation-delay: 0.2s; }
+.interest-card:nth-child(2) { animation-delay: 0.4s; }
+.interest-card:nth-child(3) { animation-delay: 0.6s; }
+
+.community-card {
+    opacity: 0;
+    animation: cardSlideUp 0.6s ease-out forwards;
+}
+
+.community-card:nth-child(1) { animation-delay: 0.3s; }
+.community-card:nth-child(2) { animation-delay: 0.5s; }
+
+.award-card {
+    opacity: 0;
+    animation: cardSlideUp 0.6s ease-out forwards;
+}
+
+.award-card:nth-child(1) { animation-delay: 0.2s; }
+.award-card:nth-child(2) { animation-delay: 0.4s; }
+.award-card:nth-child(3) { animation-delay: 0.6s; }
+
+/* List item animations */
+.education-highlights li,
+.community-impact li {
+    opacity: 0;
+    animation: fadeInLeft 0.5s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Stagger list item animations */
+.education-highlights li:nth-child(1),
+.community-impact li:nth-child(1) { animation-delay: 0.3s; }
+.education-highlights li:nth-child(2),
+.community-impact li:nth-child(2) { animation-delay: 0.4s; }
+.education-highlights li:nth-child(3),
+.community-impact li:nth-child(3) { animation-delay: 0.5s; }
+
+/* Icon animations */
+.interest-icon,
+.award-icon {
+    animation: iconPulse 2s infinite;
+}
+
+@keyframes iconPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Hover animations */
+.profile-content:hover,
+.education-card:hover,
+.interest-card:hover,
+.community-card:hover,
+.award-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.interest-icon:hover img,
+.award-icon:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Intersection Observer Animations */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Skills Page Animations */
+@keyframes skillBarFill {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--progress);
+    }
+}
+
+@keyframes skillCardSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes toolIconRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes certificationPop {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Apply animations to skills page elements */
+.skill-progress {
+    animation: skillBarFill 1.5s ease-out forwards;
+}
+
+.skills-category {
+    opacity: 0;
+    animation: skillCardSlideUp 0.6s ease-out forwards;
+}
+
+.skills-category:nth-child(1) { animation-delay: 0.2s; }
+.skills-category:nth-child(2) { animation-delay: 0.4s; }
+
+.tool-card {
+    opacity: 0;
+    animation: skillCardSlideUp 0.6s ease-out forwards;
+}
+
+.tool-card:nth-child(1) { animation-delay: 0.2s; }
+.tool-card:nth-child(2) { animation-delay: 0.3s; }
+.tool-card:nth-child(3) { animation-delay: 0.4s; }
+.tool-card:nth-child(4) { animation-delay: 0.5s; }
+.tool-card:nth-child(5) { animation-delay: 0.6s; }
+.tool-card:nth-child(6) { animation-delay: 0.7s; }
+
+.tool-icon img {
+    animation: toolIconRotate 20s linear infinite;
+}
+
+.professional-card {
+    opacity: 0;
+    animation: skillCardSlideUp 0.6s ease-out forwards;
+}
+
+.professional-card:nth-child(1) { animation-delay: 0.2s; }
+.professional-card:nth-child(2) { animation-delay: 0.4s; }
+.professional-card:nth-child(3) { animation-delay: 0.6s; }
+
+.certification-card {
+    opacity: 0;
+    animation: certificationPop 0.6s ease-out forwards;
+}
+
+.certification-card:nth-child(1) { animation-delay: 0.2s; }
+.certification-card:nth-child(2) { animation-delay: 0.4s; }
+.certification-card:nth-child(3) { animation-delay: 0.6s; }
+
+/* Skill list animations */
+.skill-list li {
+    opacity: 0;
+    animation: fadeInLeft 0.5s ease-out forwards;
+}
+
+.skill-list li:nth-child(1) { animation-delay: 0.3s; }
+.skill-list li:nth-child(2) { animation-delay: 0.4s; }
+.skill-list li:nth-child(3) { animation-delay: 0.5s; }
+.skill-list li:nth-child(4) { animation-delay: 0.6s; }
+
+/* Hover animations */
+.tool-card:hover .tool-icon img {
+    animation: toolIconRotate 2s linear infinite;
+}
+
+.certification-card:hover .certification-icon {
+    animation: iconPulse 1s infinite;
+}
+
+/* Progress bar hover effect */
+.skill-bar:hover .skill-progress {
+    background: linear-gradient(
+        90deg,
+        var(--accent-color) 0%,
+        rgba(0, 245, 255, 0.8) 50%,
+        var(--accent-color) 100%
+    );
+    background-size: 200% 100%;
+    animation: gradientShift 2s linear infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+/* Intersection Observer animations */
+.skills-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.skills-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Loading state animations */
+.skill-bar.loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 25%,
+        rgba(0, 245, 255, 0.2) 50%,
+        transparent 75%
+    );
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite linear;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Navigation Animations */
+@keyframes navSlideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes navItemFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes navLogoSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes mobileMenuSlideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes mobileMenuFadeOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* Apply animations to navigation elements */
+.navbar {
+    animation: navSlideDown 0.5s ease-out forwards;
+}
+
+.nav-menu li {
+    opacity: 0;
+    animation: navItemFadeIn 0.5s ease-out forwards;
+}
+
+.nav-menu li:nth-child(1) { animation-delay: 0.1s; }
+.nav-menu li:nth-child(2) { animation-delay: 0.2s; }
+.nav-menu li:nth-child(3) { animation-delay: 0.3s; }
+.nav-menu li:nth-child(4) { animation-delay: 0.4s; }
+.nav-menu li:nth-child(5) { animation-delay: 0.5s; }
+.nav-menu li:nth-child(6) { animation-delay: 0.6s; }
+
+/* Logo hover animation */
+.nav-logo:hover img {
+    animation: navLogoSpin 1s ease-out;
+}
+
+/* Mobile menu animations */
+.mobile-menu.active {
+    animation: mobileMenuSlideIn 0.3s ease-out forwards;
+}
+
+.mobile-menu.closing {
+    animation: mobileMenuFadeOut 0.3s ease-out forwards;
+}
+
+/* Navigation link hover effect */
+.nav-menu a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--accent-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Scroll progress animation */
+@keyframes progressGlow {
+    0% {
+        box-shadow: 0 0 5px var(--accent-color);
+    }
+    50% {
+        box-shadow: 0 0 10px var(--accent-color),
+                    0 0 20px var(--accent-color);
+    }
+    100% {
+        box-shadow: 0 0 5px var(--accent-color);
+    }
+}
+
+.scroll-progress-bar {
+    animation: progressGlow 2s infinite;
+}
+
+/* Mobile toggle button animations */
+@keyframes toggleTop {
+    0% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(9px) rotate(0); }
+    100% { transform: translateY(9px) rotate(45deg); }
+}
+
+@keyframes toggleMiddle {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes toggleBottom {
+    0% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-9px) rotate(0); }
+    100% { transform: translateY(-9px) rotate(-45deg); }
+}
+
+.nav-toggle.active span:nth-child(1) {
+    animation: toggleTop 0.3s ease-out forwards;
+}
+
+.nav-toggle.active span:nth-child(2) {
+    animation: toggleMiddle 0.3s ease-out forwards;
+}
+
+.nav-toggle.active span:nth-child(3) {
+    animation: toggleBottom 0.3s ease-out forwards;
+}
+
+/* Navigation CTA button animation */
+@keyframes ctaPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 245, 255, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 245, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 245, 255, 0);
+    }
+}
+
+.nav-cta {
+    animation: ctaPulse 2s infinite;
+}
+
+/* Active link indicator animation */
+@keyframes activeIndicator {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+.nav-menu a.active::after {
+    animation: activeIndicator 0.3s ease-out forwards;
+}
+
+/* Back to Top Button Animations */
+@keyframes backToTopAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes backToTopDisappear {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px) scale(0.8);
+    }
+}
+
+@keyframes arrowBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes buttonPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 245, 255, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(0, 245, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 245, 255, 0);
+    }
+}
+
+/* Apply animations to back to top button */
+.back-to-top.visible {
+    animation: backToTopAppear 0.3s ease-out forwards;
+}
+
+.back-to-top.hidden {
+    animation: backToTopDisappear 0.3s ease-out forwards;
+}
+
+.back-to-top:hover svg {
+    animation: arrowBounce 1s ease-out infinite;
+}
+
+.back-to-top {
+    animation: buttonPulse 2s infinite;
+}
+
+/* Click animation */
+.back-to-top:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+/* Scroll progress animation */
+@keyframes progressRing {
+    from {
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke-dashoffset: var(--scroll-percent);
+    }
+}
+
+.back-to-top .progress-ring {
+    animation: progressRing 0.3s ease-out forwards;
+}
+
+/* Loading state */
+@keyframes buttonRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.back-to-top.loading svg {
+    animation: buttonRotate 1s linear infinite;
+}
+
+/* Hover state animations */
+.back-to-top::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    z-index: -1;
+    opacity: 0.3;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover::after {
+    transform: scale(1.2);
+    opacity: 0;
+}
+
+/* Focus state animation */
+.back-to-top:focus {
+    outline: none;
+}
+
+.back-to-top:focus::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+    animation: focusRing 1s ease-out infinite;
+}
+
+@keyframes focusRing {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+} 

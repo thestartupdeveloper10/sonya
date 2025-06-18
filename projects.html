@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcase of my IT projects, including web development, programming, and technical work">
+    <title>Projects - Sonya Miteva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/icons/sonya-miteva-high-resolution-logo-transparent.png" width="120" height="50" alt="Sonya Miteva Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="projects-hero section">
+            <div class="container">
+                <h1>My Projects</h1>
+                <p class="lead">A collection of my work showcasing various IT skills and capabilities.</p>
+                
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <!-- <button class="filter-btn" data-filter="unit1">Unit 1 Work</button>
+                    <button class="filter-btn" data-filter="unit2">Unit 2 Work</button> -->
+                    <button class="filter-btn" data-filter="unit3">Unit 3 Work</button>
+                    <button class="filter-btn" data-filter="unit10">Unit 10 Work</button>
+                    <button class="filter-btn" data-filter="unit12">Unit 12 Work</button>
+                    <!-- <button class="filter-btn" data-filter="programming">Programming</button>
+                    <button class="filter-btn" data-filter="media">Media Projects</button> -->
+                </div>
+
+                <div class="project-search-container">
+                    <input type="text" class="project-search" placeholder="Search projects...">
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-grid section">
+            <div class="container">
+                <div class="project-grid">
+                    
+                    <!-- <div class="project-card" data-category="unit1">
+                        <div class="project-image">
+                            <img src="assets/images/projects/system_analysis.png" alt="Project 1" data-src="assets/images/projects/system_analysis.png">
+                        </div>
+                        <div class="project-content">
+                            <h3>System Analysis Report</h3>
+                            <p class="project-description">Comprehensive analysis of business requirements and system specifications.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Documentation</span>
+                                <span class="tech-tag">Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="project-card" data-category="unit2">
+                        <div class="project-image">
+                            <img src="assets/images/projects/network.jpg" alt="Project 2" data-src="assets/images/projects/network.jpg">
+                        </div>
+                        <div class="project-content">
+                            <h3>Network Infrastructure Design</h3>
+                            <p class="project-description">Design and implementation plan for a scalable network infrastructure.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Networking</span>
+                                <span class="tech-tag">Security</span>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <div class="project-card" data-category="unit3">
+                        <div class="project-image">
+                            <img src="assets/images/projects/portfolio.png" alt="Project 2" data-src="assets/images/projects/portfolio.png">
+                        </div>
+                        <div class="project-content">
+                            <h3>A Digital Portfolio</h3>
+                            <p class="project-description">Design and implementation plan for creating digital web based portfolio.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Web Design</span>
+                                <span class="tech-tag">programming</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="unit10">
+                        <div class="project-image">
+                            <img src="assets/images/projects/database.webp" alt="Project 2" data-src="assets/images/projects/database.webp">
+                        </div>
+                        <div class="project-content">
+                            <h3>Database Development</h3>
+                            <p class="project-description">Design and implementation plan for creating a database.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Database Design</span>
+                                <span class="tech-tag">Data</span>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="project-card" data-category="unit12">
+                        <div class="project-image">
+                            <img src="assets/images/projects/software.webp" alt="Project 2" data-src="assets/images/projects/software.webp">
+                        </div>
+                        <div class="project-content">
+                            <h3>Software Development</h3>
+                            <p class="project-description">Design and implementation plan for creating a software.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Software Design</span>
+                                <span class="tech-tag">Implementation</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                   
+                    <!-- <div class="project-card" data-category="programming">
+                        <div class="project-image">
+                            <img src="assets/images/projects/inventory.jpg" alt="Project 3" data-src="assets/images/projects/inventory.jpg">
+                        </div>
+                        <div class="project-content">
+                            <h3>Inventory Management System</h3>
+                            <p class="project-description">Web-based system for tracking and managing inventory items.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="project-card" data-category="media">
+                        <div class="project-image">
+                            <img src="assets/images/projects/technical.webp" alt="Project 4" data-src="assets/images/projects/technical.webp">
+                        </div>
+                        <div class="project-content">
+                            <h3>Technical Tutorial Series</h3>
+                            <p class="project-description">Educational video series explaining technical concepts.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Video</span>
+                                <span class="tech-tag">Education</span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="project-categories section">
+            <div class="container">
+                <h2>Project Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <h3>Unit 1 Work</h3>
+                        <p>Technical documentation, analysis reports, and research papers.</p>
+                        <a href="#" class="btn-secondary">View Unit 1 Projects</a>
+                    </div>
+                    <div class="category-card">
+                        <h3>Unit 2 Work</h3>
+                        <p>Practical implementations, system designs, and technical solutions.</p>
+                        <a href="#" class="btn-secondary">View Unit 2 Projects</a>
+                    </div>
+                    <div class="category-card">
+                        <h3>Programming</h3>
+                        <p>Web applications, software solutions, and coding projects.</p>
+                        <a href="#" class="btn-secondary">View Programming Projects</a>
+                    </div>
+                    <div class="category-card">
+                        <h3>Media Projects</h3>
+                        <p>Video tutorials, presentations, and digital media content.</p>
+                        <a href="#" class="btn-secondary">View Media Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Sonya Miteva</h3>
+                    <p>Aspiring IT Professional</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sonya Miteva All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html> 
